@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:newsapp/views/screens/bookmark.dart';
+import 'package:newsapp/views/screens/news_detail.dart';
 
 import 'views/screens/home_page.dart';
 
@@ -22,7 +24,9 @@ class _MyAppState extends State<MyApp> {
       ),
       debugShowCheckedModeBanner: false,
       routes: {
-        '/':(context)=>HomePage(),
+        '/': (context) => homepage(),
+        'detailPage': (context) => const newsDetailPage(),
+        'bookmark': (context) => const bookmarkpage(),
       },
     );
   }
